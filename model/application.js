@@ -18,11 +18,11 @@ const applicationSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    collegeName: {
+    institution: {
       type: String,
       required: true,
     },
-    year: {
+    graduationYear: {
       type: String,
       required: true,
     },
@@ -34,7 +34,7 @@ const applicationSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    roleApplyingFor: {
+    role: {
       type: String,
       required: true,
     },
