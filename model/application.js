@@ -6,19 +6,15 @@ const applicationSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    email: {
-      type: String,
-      required: true,
-    },
     phone: {
       type: String,
       required: true,
     },
-    city: {
+    email: {
       type: String,
       required: true,
     },
-    state: {
+    degree: {
       type: String,
       required: true,
     },
@@ -26,16 +22,15 @@ const applicationSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    degree: {
-      type: String,
-      default: "B.Tech",
-    },
     year: {
       type: String,
-      enum: ["2nd", "3rd", "Final"],
       required: true,
     },
     branch: {
+      type: String,
+      required: true,
+    },
+    percentage: {
       type: String,
       required: true,
     },
@@ -55,6 +50,22 @@ const applicationSchema = new mongoose.Schema(
     },
     portfolio: {
       type: String,
+    },
+    country: {
+      type: String,
+      required: true,
+    },
+    state: {
+      type: String,
+      required: true,
+    },
+      city: {
+      type: String,
+      required: true,
+    },
+    pinCode: {
+      type: String,
+      required: true,
     },
   },
   { timestamps: true },
